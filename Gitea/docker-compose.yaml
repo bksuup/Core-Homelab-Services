@@ -27,6 +27,7 @@ services:
       - frontend
     volumes:
       - gitea:/data
+      - ./conf/app.ini:/etc/gitea/conf/app.ini:ro
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
